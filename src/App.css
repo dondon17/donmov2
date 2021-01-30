@@ -1,78 +1,12 @@
-*{
+* {
     box-sizing: border-box;
-}
-body{
+  }
+  
+  body {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #eff3f7;
     height: 100%;
-}
-
-html, body, #root, .container{
-    height: 100%;
-}
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.loader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    font-weight: 600;
-    margin: 0 100%;
-}
-
-.loader::before, .loader::after{
-    content: "";
-    width: 1.8em;
-    height: 1.8em;
-    position: absolute;
-    border-radius: 4em;
-}
-
-.loader::before{
-    left: 0;
-    background-color: lightcoral;
-    transform: translateX(10px);
-    animation: Moveleft 1s ease infinite;
-
-}
-
-.loader::after{
-    right: 0;
-    background-color: lightgreen;
-    transform: translateX(-10px);
-    animation: Moveright 1s ease infinite;
-}
-
-@keyframes Moveright{
-    0%{
-        transform: translateX(-10px);
-    }
-    50%{
-        background-color: rgba(144, 238, 144, 0.698);
-        transform: translateX(10px);
-    }
-    100%{
-        transform: translateX(-10px);
-    }
-}
-
-@keyframes Moveleft{
-    0%{
-        transform: translateX(10px);
-    }
-    50%{
-        background-color: rgba(240, 128, 128, 0.651);
-        transform: translateX(-10px);
-    }
-    100%{
-        transform: translateX(10px);
-    }
-}
+  }
